@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { authService, UserAccount } from '../services/auth';
 import { RoleBadge } from './RoleBadge';
+import faviconImg from '../assets/favicon.png';
 
 interface SidebarProps {
   currentView: string;
@@ -97,15 +98,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {/* Top Branding Section */}
       <div className="p-5">
         <div className="flex items-center gap-3">
-          {/* Geometric Logo [ E· ] */}
-          <div className="w-8 h-8 rounded-[6px] bg-white flex items-center justify-center text-[#020261] font-bold text-sm shadow-xs">
-            <span className="font-mono tracking-tighter">E·</span>
-          </div>
+          <img src={faviconImg} alt="EduMatch AI" className="h-11 w-auto object-contain shrink-0" />
 
           <div>
             <div className="text-white font-bold text-[15px] tracking-tight leading-tight flex items-center gap-1.5">
               <span>EduMatch</span>
-              <span className="text-[#38BDF8] font-bold text-xs px-1.5 py-0.2 rounded bg-white/10 border border-[#38BDF8]/40">
+              <span className="text-[#38BDF8] font-bold text-xs px-1.5 py-0.2 rounded bg-white/10">
                 AI
               </span>
             </div>

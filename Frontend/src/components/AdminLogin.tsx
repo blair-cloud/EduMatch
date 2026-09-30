@@ -23,6 +23,7 @@ import {
   X
 } from 'lucide-react';
 import { authService, DEMO_ACCOUNTS } from '../services/auth';
+import logoImg from '../assets/logo.png';
 
 // Authentic Rwandan secondary education photography
 import heroRwandaStudents from '../assets/images/hero_rwanda_students_1790766556338.jpg';
@@ -218,18 +219,8 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({
         <div className="max-w-md w-full mx-auto space-y-6">
           {/* Logo & Header */}
           <div className="space-y-2">
-            <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-[6px] bg-[#2563EB] flex items-center justify-center text-white font-bold text-sm shadow-xs ring-1 ring-black/5">
-                <span className="font-mono tracking-tighter">E·</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <span className="text-[#172554] font-extrabold text-base tracking-tight">
-                  EduMatch
-                </span>
-                <span className="text-[#0F9D8A] font-semibold text-xs px-1.5 py-0.5 rounded-[4px] bg-[#0F9D8A]/10 border border-[#0F9D8A]/30">
-                  AI
-                </span>
-              </div>
+            <div className="flex items-center">
+              <img src={logoImg} alt="EduMatch AI" className="h-14 sm:h-16 w-auto object-contain" />
             </div>
 
             <div className="pt-2">

@@ -23,6 +23,7 @@ import classroomRwandaStudents from '../assets/images/classroom_rwanda_students_
 import learningRwandaGroup from '../assets/images/learning_rwanda_group_1790766616806.jpg';
 import impactRwandaStudents from '../assets/images/impact_rwanda_students_1790766631214.jpg';
 import campusRwandaPathway from '../assets/images/campus_rwanda_pathway_1790766641897.jpg';
+import logoImg from '../assets/logo.png';
 
 interface LandingPageProps {
   onExplorePlatform: () => void;
@@ -166,19 +167,11 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            {/* Logo */}
-            <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-[6px] bg-[#2563EB] flex items-center justify-center text-white font-bold text-sm shadow-xs ring-1 ring-white/20">
-                <span className="font-mono tracking-tighter">E·</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <span className="text-white font-extrabold text-base tracking-tight">
-                  EduMatch
-                </span>
-                <span className="text-[#99F6E4] font-semibold text-xs px-1.5 py-0.5 rounded-[4px] bg-white/10 border border-white/20">
-                  AI
-                </span>
-              </div>
+            {/* Brand Caption */}
+            <div className="flex items-center">
+              <span className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-white select-none">
+                EduMatch AI
+              </span>
             </div>
 
             {/* Simplified Nav Links: How It Works, Platform, AI, Trust, Impact */}
@@ -831,17 +824,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             {/* Col 1: Strong Brand Area (5 Cols) */}
             <div className="md:col-span-5 space-y-4">
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-[8px] bg-[#2563EB] flex items-center justify-center text-white font-bold text-base shadow-sm ring-1 ring-white/10">
-                  <span className="font-mono tracking-tighter">E·</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-white font-extrabold text-xl tracking-tight">
-                    EduMatch
-                  </span>
-                  <span className="text-[#0F9D8A] font-semibold text-xs px-1.5 py-0.5 rounded-[4px] bg-[#0F9D8A]/15 border border-[#0F9D8A]/30">
-                    AI
-                  </span>
-                </div>
+                <img src={logoImg} alt="EduMatch AI" className="h-12 sm:h-14 w-auto object-contain" />
               </div>
 
               <div className="text-sm font-semibold text-slate-200">

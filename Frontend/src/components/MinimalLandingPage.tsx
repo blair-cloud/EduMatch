@@ -1,6 +1,8 @@
 import React from 'react';
 import { ArrowRight, CheckCircle2, ShieldCheck, Compass, School, Users } from 'lucide-react';
 
+import logoImg from '../assets/logo.png';
+
 interface MinimalLandingPageProps {
   onEnterPlatform: () => void;
 }
@@ -10,15 +12,9 @@ export const MinimalLandingPage: React.FC<MinimalLandingPageProps> = ({ onEnterP
     <div className="min-h-screen bg-white text-[#0F172A] flex flex-col justify-between selection:bg-[#2563EB] selection:text-white">
       {/* Top Simple Header */}
       <header className="h-16 border-b border-[#E2E8F0] px-6 sm:px-12 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="w-7 h-7 rounded-[6px] bg-[#2563EB] flex items-center justify-center text-white font-bold text-xs shadow-xs">
-            <span className="font-mono">E·</span>
-          </div>
-          <span className="font-extrabold text-base tracking-tight text-[#172554]">
+        <div className="flex items-center">
+          <span className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#172554] select-none">
             EduMatch AI
-          </span>
-          <span className="hidden sm:inline text-xs text-[#64748B] pl-2 border-l border-[#E2E8F0]">
-            AI-assisted. Human-approved.
           </span>
         </div>
 
