@@ -93,7 +93,7 @@ export const SchoolsScreen: React.FC<SchoolsScreenProps> = () => {
           <div className="text-xs font-semibold text-[#64748B] mb-1">
             Secondary School Catalog & Capacities
           </div>
-          <h1 className="text-2xl font-bold text-[#0B1F3A] tracking-tight">
+          <h1 className="text-2xl font-bold text-[#172554] tracking-tight">
             Schools & Seat Allocations
           </h1>
         </div>
@@ -111,7 +111,7 @@ export const SchoolsScreen: React.FC<SchoolsScreenProps> = () => {
       </div>
 
       {editFeedback && (
-        <div className="p-3 bg-slate-100 border border-[#E2E8F0] rounded-[6px] text-xs text-[#0B1F3A] font-medium flex items-center justify-between">
+        <div className="p-3 bg-slate-100 border border-[#E2E8F0] rounded-[6px] text-xs text-[#172554] font-medium flex items-center justify-between">
           <span>{editFeedback}</span>
           <button onClick={() => setEditFeedback(null)} className="font-bold underline ml-2">
             Dismiss
@@ -124,7 +124,7 @@ export const SchoolsScreen: React.FC<SchoolsScreenProps> = () => {
         {/* Left: Schools List */}
         <div className="lg:col-span-6 bg-white rounded-[8px] border border-[#E2E8F0] overflow-hidden">
           <div className="p-4 border-b border-[#E2E8F0] bg-slate-50/50 flex items-center justify-between">
-            <span className="text-xs font-bold text-[#0B1F3A] uppercase tracking-wider">
+            <span className="text-xs font-bold text-[#172554] uppercase tracking-wider">
               Institutions ({filtered.length})
             </span>
             <span className="text-[11px] text-[#64748B]">Click to inspect</span>
@@ -160,7 +160,7 @@ export const SchoolsScreen: React.FC<SchoolsScreenProps> = () => {
                   </div>
 
                   <div className="text-right">
-                    <span className="font-mono font-bold text-xs text-[#0B1F3A] tabular-nums block">
+                    <span className="font-mono font-bold text-xs text-[#172554] tabular-nums block">
                       {used} / {cap}
                     </span>
                     <span className="text-[11px] text-[#64748B]">
@@ -182,7 +182,7 @@ export const SchoolsScreen: React.FC<SchoolsScreenProps> = () => {
                 <span className="text-xs font-mono font-semibold text-[#2563EB] block mb-0.5">
                   Offer #{active.offer_id}
                 </span>
-                <h2 className="text-xl font-bold text-[#0B1F3A]">
+                <h2 className="text-xl font-bold text-[#172554]">
                   {active.school_name}
                 </h2>
                 <div className="text-xs text-[#64748B] mt-0.5">
@@ -192,7 +192,7 @@ export const SchoolsScreen: React.FC<SchoolsScreenProps> = () => {
 
               <button
                 onClick={() => handleOpenEdit(active)}
-                className="px-2.5 py-1 text-xs font-semibold text-[#0B1F3A] hover:bg-slate-100 rounded-[6px] border border-[#E2E8F0] transition-colors flex items-center gap-1 cursor-pointer"
+                className="px-2.5 py-1 text-xs font-semibold text-[#172554] hover:bg-slate-100 rounded-[6px] border border-[#E2E8F0] transition-colors flex items-center gap-1 cursor-pointer"
               >
                 <Edit2 className="w-3 h-3 text-[#64748B]" />
                 <span>Edit Quota</span>
@@ -203,7 +203,7 @@ export const SchoolsScreen: React.FC<SchoolsScreenProps> = () => {
             <div className="grid grid-cols-3 gap-3 text-center">
               <div className="p-3.5 bg-slate-50 rounded-[6px] border border-[#E2E8F0]">
                 <span className="text-xs text-[#64748B] block">Capacity</span>
-                <span className="text-2xl font-bold font-sans text-[#0B1F3A] tabular-nums mt-1 block">
+                <span className="text-2xl font-bold font-sans text-[#172554] tabular-nums mt-1 block">
                   {capacity}
                 </span>
                 <span className="text-[10px] text-[#64748B] mt-0.5 block">Approved seats</span>
@@ -228,28 +228,28 @@ export const SchoolsScreen: React.FC<SchoolsScreenProps> = () => {
 
             {/* 11. Placement Demand */}
             <div className="space-y-3 pt-2 border-t border-[#E2E8F0]">
-              <div className="text-xs font-bold uppercase tracking-wider text-[#0B1F3A]">
+              <div className="text-xs font-bold uppercase tracking-wider text-[#172554]">
                 Placement Demand
               </div>
               <div className="space-y-2 text-xs">
                 <div className="flex items-center justify-between p-2.5 rounded-[6px] bg-slate-50 border border-[#E2E8F0]">
                   <span className="text-[#0F172A] font-medium">First preference</span>
-                  <span className="font-mono font-bold text-[#0B1F3A] tabular-nums">{firstPref} candidates</span>
+                  <span className="font-mono font-bold text-[#172554] tabular-nums">{firstPref} candidates</span>
                 </div>
                 <div className="flex items-center justify-between p-2.5 rounded-[6px] bg-slate-50 border border-[#E2E8F0]">
                   <span className="text-[#0F172A] font-medium">Second preference</span>
-                  <span className="font-mono font-bold text-[#0B1F3A] tabular-nums">{secondPref} candidates</span>
+                  <span className="font-mono font-bold text-[#172554] tabular-nums">{secondPref} candidates</span>
                 </div>
                 <div className="flex items-center justify-between p-2.5 rounded-[6px] bg-slate-50 border border-[#E2E8F0]">
                   <span className="text-[#0F172A] font-medium">Other / Fallback requests</span>
-                  <span className="font-mono font-bold text-[#0B1F3A] tabular-nums">{otherPref} candidates</span>
+                  <span className="font-mono font-bold text-[#172554] tabular-nums">{otherPref} candidates</span>
                 </div>
               </div>
             </div>
 
             {/* 11. Placement Requirements Checklist */}
             <div className="space-y-2.5 pt-2 border-t border-[#E2E8F0] text-xs">
-              <div className="text-xs font-bold uppercase tracking-wider text-[#0B1F3A]">
+              <div className="text-xs font-bold uppercase tracking-wider text-[#172554]">
                 Placement Requirements
               </div>
               <div className="space-y-1.5 text-[#0F172A]">
@@ -271,7 +271,7 @@ export const SchoolsScreen: React.FC<SchoolsScreenProps> = () => {
             {/* Edit Quota Form when open */}
             {isEditing && (
               <div className="p-4 bg-slate-50 rounded-[6px] border border-[#E2E8F0] space-y-3 text-xs">
-                <div className="font-bold text-[#0B1F3A]">
+                <div className="font-bold text-[#172554]">
                   Edit Institution Quotas (Administrator)
                 </div>
                 <div className="grid grid-cols-2 gap-3">
@@ -306,7 +306,7 @@ export const SchoolsScreen: React.FC<SchoolsScreenProps> = () => {
                   </button>
                   <button
                     onClick={handleSaveEdit}
-                    className="px-3 py-1 bg-[#0B1F3A] text-white rounded-[6px] text-xs font-semibold"
+                    className="px-3 py-1 bg-[#2563EB] hover:bg-[#1D4ED8] text-white rounded-[6px] text-xs font-semibold"
                   >
                     Save Changes
                   </button>

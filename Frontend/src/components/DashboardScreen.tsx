@@ -39,17 +39,17 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
           <div className="text-xs font-semibold uppercase tracking-wider text-[#64748B] mb-1">
             National Examination & School Inspection Authority (NESA)
           </div>
-          <h1 className="text-2xl sm:text-3xl font-bold text-[#0B1F3A] tracking-tight">
+          <h1 className="text-2xl sm:text-3xl font-bold text-[#172554] tracking-tight">
             Good morning, Placement Officer
           </h1>
-          <p className="text-sm text-[#64748B] mt-1">
+          <p className="text-sm text-[#475569] mt-1">
             2026 O-Level Secondary School Placement Console · Province Cohort Snapshot
           </p>
         </div>
 
         <button
           onClick={() => onNavigateToPlacement()}
-          className="px-4 py-2 bg-[#0B1F3A] hover:bg-slate-800 text-white text-xs font-semibold rounded-[6px] shadow-xs transition-colors flex items-center gap-2 cursor-pointer self-start sm:self-auto"
+          className="px-4 py-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-xs font-semibold rounded-[6px] shadow-xs transition-colors flex items-center gap-2 cursor-pointer self-start sm:self-auto"
         >
           <span>Open Placement Workspace</span>
           <ArrowRight className="w-3.5 h-3.5" />
@@ -61,7 +61,7 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
         {/* Card 1: Students */}
         <div className="p-5 bg-white rounded-[8px] border border-[#E2E8F0] space-y-1">
           <div className="text-xs font-medium text-[#64748B]">Candidates</div>
-          <div className="text-3xl font-bold font-sans text-[#0B1F3A] tabular-nums tracking-tight">
+          <div className="text-3xl font-bold font-sans text-[#172554] tabular-nums tracking-tight">
             {metrics ? metrics.total_applicants.toLocaleString() : '200'}
           </div>
           <div className="text-[12px] text-[#64748B] flex items-center gap-1.5 pt-1">
@@ -73,7 +73,7 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
         {/* Card 2: Schools */}
         <div className="p-5 bg-white rounded-[8px] border border-[#E2E8F0] space-y-1">
           <div className="text-xs font-medium text-[#64748B]">Schools</div>
-          <div className="text-3xl font-bold font-sans text-[#0B1F3A] tabular-nums tracking-tight">
+          <div className="text-3xl font-bold font-sans text-[#172554] tabular-nums tracking-tight">
             {offers.length > 0 ? offers.length : '12'}
           </div>
           <div className="text-[12px] text-[#64748B] pt-1">
@@ -111,7 +111,7 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
         <div className="lg:col-span-8 bg-white rounded-[8px] border border-[#E2E8F0] p-6 space-y-6">
           <div className="flex items-center justify-between border-b border-[#E2E8F0] pb-4">
             <div>
-              <h2 className="text-base font-bold text-[#0B1F3A]">
+              <h2 className="text-base font-bold text-[#172554]">
                 Placement Overview
               </h2>
               <p className="text-xs text-[#64748B] mt-0.5">
@@ -130,7 +130,7 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
           {/* Seat Capacity Bar */}
           <div className="space-y-2">
             <div className="flex items-center justify-between text-xs">
-              <span className="font-semibold text-[#0B1F3A]">
+              <span className="font-semibold text-[#172554]">
                 Seat Pool Allocation ({totalReserved} / {totalCapacity} seats)
               </span>
               <span className="font-mono text-[#64748B]">
@@ -162,7 +162,7 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
           <div className="pt-4 border-t border-[#E2E8F0] grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="p-3.5 bg-slate-50 rounded-[6px] border border-[#E2E8F0]">
               <span className="text-xs text-[#64748B] block">First Preference Matches</span>
-              <span className="text-xl font-bold font-sans text-[#0B1F3A] tabular-nums mt-1 block">
+              <span className="text-xl font-bold font-sans text-[#172554] tabular-nums mt-1 block">
                 {metrics ? `${metrics.first_choice_rate}%` : '52.0%'}
               </span>
               <span className="text-[11px] text-[#64748B] mt-0.5 block">
@@ -172,7 +172,7 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
 
             <div className="p-3.5 bg-slate-50 rounded-[6px] border border-[#E2E8F0]">
               <span className="text-xs text-[#64748B] block">Top-Three Listed</span>
-              <span className="text-xl font-bold font-sans text-[#0B1F3A] tabular-nums mt-1 block">
+              <span className="text-xl font-bold font-sans text-[#172554] tabular-nums mt-1 block">
                 {metrics ? `${metrics.top_three_rate}%` : '84.5%'}
               </span>
               <span className="text-[11px] text-[#64748B] mt-0.5 block">
@@ -196,7 +196,7 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
         <div className="lg:col-span-4 bg-white rounded-[8px] border border-[#E2E8F0] p-6 space-y-5 flex flex-col justify-between">
           <div className="space-y-4">
             <div className="flex items-center justify-between border-b border-[#E2E8F0] pb-3">
-              <h2 className="text-sm font-bold text-[#0B1F3A]">
+              <h2 className="text-sm font-bold text-[#172554]">
                 High-Demand Schools
               </h2>
               <button
@@ -216,7 +216,7 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
                 return (
                   <div key={offer.offer_id} className="text-xs space-y-1">
                     <div className="flex items-center justify-between">
-                      <span className="font-semibold text-[#0B1F3A] truncate max-w-[170px]">
+                      <span className="font-semibold text-[#172554] truncate max-w-[170px]">
                         {offer.school_name}
                       </span>
                       <span className={`font-mono text-[11px] ${isFull ? 'text-[#DC2626] font-bold' : 'text-[#64748B]'}`}>
@@ -236,7 +236,7 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
           </div>
 
           <div className="p-3.5 bg-slate-50 rounded-[6px] border border-[#E2E8F0] text-xs space-y-1.5">
-            <div className="font-bold text-[#0B1F3A] flex items-center gap-1.5">
+            <div className="font-bold text-[#172554] flex items-center gap-1.5">
               <ShieldCheck className="w-4 h-4 text-[#16A34A]" />
               <span>Invariants Enforced</span>
             </div>

@@ -29,7 +29,7 @@ export const ResponsibleAIScreen: React.FC = () => {
         <div className="text-xs font-semibold text-[#0F9D8A] mb-1">
           Institutional Governance & Ethics
         </div>
-        <h1 className="text-2xl sm:text-3xl font-bold text-[#0B1F3A] tracking-tight">
+        <h1 className="text-2xl sm:text-3xl font-bold text-[#172554] tracking-tight">
           Responsible AI Framework
         </h1>
         <p className="text-sm text-[#64748B] mt-1 max-w-2xl">
@@ -38,20 +38,20 @@ export const ResponsibleAIScreen: React.FC = () => {
       </div>
 
       {/* Slogan Banner */}
-      <div className="p-6 bg-[#0B1F3A] text-white rounded-[8px] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div className="p-6 bg-gradient-to-r from-[#2563EB] to-[#1D4ED8] text-white rounded-[8px] shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div>
-          <div className="text-xs font-mono uppercase tracking-wider text-[#0F9D8A] mb-1">
+          <div className="text-xs font-mono uppercase tracking-wider text-blue-200 mb-1">
             Governing Directive
           </div>
           <div className="text-xl sm:text-2xl font-extrabold tracking-tight">
             AI recommends. NESA decides.
           </div>
-          <p className="text-xs text-slate-300 mt-1 max-w-xl">
+          <p className="text-xs text-blue-100 mt-1 max-w-xl">
             No algorithm can publish or enforce secondary school placements autonomously. All proposals require explicit officer sign-off with recorded rationale.
           </p>
         </div>
 
-        <div className="px-3.5 py-1.5 rounded-full bg-[#0F9D8A]/20 border border-[#0F9D8A]/40 text-[#0F9D8A] text-xs font-semibold shrink-0">
+        <div className="px-3.5 py-1.5 rounded-full bg-white/15 border border-white/30 text-white text-xs font-semibold shrink-0">
           Human-in-the-Loop 100%
         </div>
       </div>
@@ -62,8 +62,8 @@ export const ResponsibleAIScreen: React.FC = () => {
           <div className="w-8 h-8 rounded-[6px] bg-blue-50 border border-blue-100 text-[#2563EB] flex items-center justify-center font-bold text-xs">
             <UserCheck className="w-4 h-4" />
           </div>
-          <div className="text-sm font-bold text-[#0B1F3A]">Human Oversight</div>
-          <div className="text-2xl font-bold font-mono text-[#0B1F3A] tabular-nums">100%</div>
+          <div className="text-sm font-bold text-[#172554]">Human Oversight</div>
+          <div className="text-2xl font-bold font-mono text-[#172554] tabular-nums">100%</div>
           <p className="text-xs text-[#64748B] leading-relaxed">
             Final placement requires officer approval. No autonomous write access to student records.
           </p>
@@ -73,7 +73,7 @@ export const ResponsibleAIScreen: React.FC = () => {
           <div className="w-8 h-8 rounded-[6px] bg-teal-50 border border-teal-100 text-[#0F9D8A] flex items-center justify-center font-bold text-xs">
             <Eye className="w-4 h-4" />
           </div>
-          <div className="text-sm font-bold text-[#0B1F3A]">Explainability</div>
+          <div className="text-sm font-bold text-[#172554]">Explainability</div>
           <div className="text-2xl font-bold font-mono text-[#0F9D8A] tabular-nums">100%</div>
           <p className="text-xs text-[#64748B] leading-relaxed">
             Every recommendation explains the exact factors used: eligibility, preference, capacity, and rules.
@@ -84,7 +84,7 @@ export const ResponsibleAIScreen: React.FC = () => {
           <div className="w-8 h-8 rounded-[6px] bg-emerald-50 border border-emerald-100 text-[#16A34A] flex items-center justify-center font-bold text-xs">
             <ShieldCheck className="w-4 h-4" />
           </div>
-          <div className="text-sm font-bold text-[#0B1F3A]">Rule Compliance</div>
+          <div className="text-sm font-bold text-[#172554]">Rule Compliance</div>
           <div className="text-2xl font-bold font-mono text-[#16A34A] tabular-nums">0 Violations</div>
           <p className="text-xs text-[#64748B] leading-relaxed">
             Recommendations are pre-validated against official placement quotas and capacity invariants.
@@ -92,11 +92,11 @@ export const ResponsibleAIScreen: React.FC = () => {
         </div>
 
         <div className="p-5 bg-white rounded-[8px] border border-[#E2E8F0] space-y-2">
-          <div className="w-8 h-8 rounded-[6px] bg-slate-50 border border-slate-200 text-[#0B1F3A] flex items-center justify-center font-bold text-xs">
+          <div className="w-8 h-8 rounded-[6px] bg-slate-50 border border-slate-200 text-[#172554] flex items-center justify-center font-bold text-xs">
             <Lock className="w-4 h-4" />
           </div>
-          <div className="text-sm font-bold text-[#0B1F3A]">Data Privacy</div>
-          <div className="text-2xl font-bold font-mono text-[#0B1F3A] tabular-nums">Encrypted</div>
+          <div className="text-sm font-bold text-[#172554]">Data Privacy</div>
+          <div className="text-2xl font-bold font-mono text-[#172554] tabular-nums">Encrypted</div>
           <p className="text-xs text-[#64748B] leading-relaxed">
             Student records are de-identified; zero personal contact details exposed during placement.
           </p>
@@ -106,7 +106,7 @@ export const ResponsibleAIScreen: React.FC = () => {
       {/* Decision Audit Trail Pipeline Diagram */}
       <div className="bg-white rounded-[8px] border border-[#E2E8F0] p-6 space-y-6">
         <div>
-          <h2 className="text-base font-bold text-[#0B1F3A]">
+          <h2 className="text-base font-bold text-[#172554]">
             Decision Audit Trail Pipeline
           </h2>
           <p className="text-xs text-[#64748B] mt-0.5">
@@ -118,7 +118,7 @@ export const ResponsibleAIScreen: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-3 p-4 bg-slate-50 rounded-[6px] border border-[#E2E8F0] text-xs">
           <div className="text-center p-3 bg-white rounded-[6px] border border-[#E2E8F0] w-full md:w-44">
             <span className="text-[10px] text-[#64748B] uppercase font-semibold block">Step 1</span>
-            <span className="font-bold text-[#0B1F3A] block mt-1">Student #10452</span>
+            <span className="font-bold text-[#172554] block mt-1">Student #10452</span>
             <span className="text-[11px] text-[#64748B]">Profile Loaded</span>
           </div>
 
@@ -136,7 +136,7 @@ export const ResponsibleAIScreen: React.FC = () => {
 
           <div className="text-center p-3 bg-white rounded-[6px] border border-[#E2E8F0] w-full md:w-44">
             <span className="text-[10px] text-[#64748B] uppercase font-semibold block">Step 3</span>
-            <span className="font-bold text-[#0B1F3A] block mt-1">Officer Reviewed</span>
+            <span className="font-bold text-[#172554] block mt-1">Officer Reviewed</span>
             <span className="text-[11px] text-[#64748B]">Eligibility Verified</span>
           </div>
 
@@ -152,7 +152,7 @@ export const ResponsibleAIScreen: React.FC = () => {
 
         {/* Audit Log Table */}
         <div className="pt-2">
-          <div className="text-xs font-bold text-[#0B1F3A] mb-3">
+          <div className="text-xs font-bold text-[#172554] mb-3">
             Real-Time Audit History
           </div>
           <div className="border border-[#E2E8F0] rounded-[6px] overflow-hidden text-xs">
@@ -172,7 +172,7 @@ export const ResponsibleAIScreen: React.FC = () => {
                     <td className="py-2.5 px-3 font-mono text-[11px] text-[#64748B]">
                       {new Date(event.timestamp).toLocaleTimeString()}
                     </td>
-                    <td className="py-2.5 px-3 font-medium text-[#0B1F3A]">
+                    <td className="py-2.5 px-3 font-medium text-[#172554]">
                       {event.actor}
                     </td>
                     <td className="py-2.5 px-3">
@@ -180,7 +180,7 @@ export const ResponsibleAIScreen: React.FC = () => {
                         {event.action}
                       </span>
                     </td>
-                    <td className="py-2.5 px-3 font-mono text-[#0B1F3A]">
+                    <td className="py-2.5 px-3 font-mono text-[#172554]">
                       {event.student_id ? `#${event.student_id.replace(/^S/, '104')}` : 'Cohort'}
                     </td>
                     <td className="py-2.5 px-3 text-[#64748B]">

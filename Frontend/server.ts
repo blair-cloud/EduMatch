@@ -701,7 +701,9 @@ async function startServer() {
   }
 
   app.listen(PORT, '0.0.0.0', () => {
-    console.log(`EduMatch AI server running on http://0.0.0.0:${PORT}`);
+    console.log(`EduMatch AI server running at:`);
+    console.log(`  > Local:   http://localhost:${PORT}/`);
+    console.log(`  > Network: http://0.0.0.0:${PORT}/`);
   });
 }
 

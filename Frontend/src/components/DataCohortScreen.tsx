@@ -406,28 +406,28 @@ export const DataCohortScreen: React.FC<DataCohortScreenProps> = ({
           </div>
 
           {/* Allocation Run Launcher Card */}
-          <div className="bg-slate-900 text-white p-6 rounded-xl shadow-md space-y-5">
+          <div className="bg-white border border-[#E2E8F0] text-[#172554] p-6 rounded-[8px] shadow-xs space-y-5">
             <div>
-              <div className="text-xs font-mono uppercase tracking-wider text-indigo-400 mb-1">
+              <div className="text-xs font-mono uppercase tracking-wider text-[#2563EB] mb-1 font-bold">
                 Authoritative Orchestrator
               </div>
-              <h2 className="text-lg font-bold text-white">
+              <h2 className="text-lg font-bold text-[#172554]">
                 Execute Placement Run
               </h2>
-              <p className="text-xs text-slate-300 mt-1">
+              <p className="text-xs text-[#475569] mt-1">
                 Runs deterministic serial allocation and embeds local model fallback inference.
               </p>
             </div>
 
             {/* Mode selection buttons */}
-            <div className="grid grid-cols-2 gap-2 p-1 bg-slate-800 rounded-lg text-xs">
+            <div className="grid grid-cols-2 gap-2 p-1 bg-[#F8FAFC] border border-[#E2E8F0] rounded-[6px] text-xs">
               <button
                 type="button"
                 onClick={() => setRunMode('AI_ASSISTED')}
-                className={`py-2 px-3 rounded-md font-semibold transition-colors cursor-pointer ${
+                className={`py-2 px-3 rounded-[4px] font-semibold transition-colors cursor-pointer ${
                   runMode === 'AI_ASSISTED'
-                    ? 'bg-indigo-600 text-white'
-                    : 'text-slate-400 hover:text-white'
+                    ? 'bg-[#2563EB] text-white shadow-xs'
+                    : 'text-[#475569] hover:text-[#2563EB]'
                 }`}
               >
                 AI-Assisted Run
@@ -435,10 +435,10 @@ export const DataCohortScreen: React.FC<DataCohortScreenProps> = ({
               <button
                 type="button"
                 onClick={() => setRunMode('RULES_ONLY')}
-                className={`py-2 px-3 rounded-md font-semibold transition-colors cursor-pointer ${
+                className={`py-2 px-3 rounded-[4px] font-semibold transition-colors cursor-pointer ${
                   runMode === 'RULES_ONLY'
-                    ? 'bg-indigo-600 text-white'
-                    : 'text-slate-400 hover:text-white'
+                    ? 'bg-[#2563EB] text-white shadow-xs'
+                    : 'text-[#475569] hover:text-[#2563EB]'
                 }`}
               >
                 Rules-Only Mode
@@ -448,22 +448,22 @@ export const DataCohortScreen: React.FC<DataCohortScreenProps> = ({
             <button
               onClick={handleExecuteRun}
               disabled={runLoading}
-              className="w-full py-3.5 px-4 bg-white text-slate-950 hover:bg-slate-100 rounded-lg font-bold text-sm transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-sm"
+              className="w-full py-3 px-4 bg-[#2563EB] text-white hover:bg-[#1D4ED8] rounded-[6px] font-bold text-xs transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-xs disabled:opacity-50"
             >
               {runLoading ? (
                 <>
-                  <RefreshCw className="w-4 h-4 animate-spin text-slate-950" />
+                  <RefreshCw className="w-4 h-4 animate-spin text-white" />
                   <span>Computing Allocations...</span>
                 </>
               ) : (
                 <>
-                  <Play className="w-4 h-4 fill-slate-950" />
+                  <Play className="w-4 h-4 fill-white" />
                   <span>Generate Placement Proposals</span>
                 </>
               )}
             </button>
 
-            <div className="text-[11px] text-slate-400 flex items-center justify-between pt-2 border-t border-slate-800">
+            <div className="text-[11px] text-[#64748B] flex items-center justify-between pt-2 border-t border-[#E2E8F0]">
               <span>Single active plan per cohort</span>
               <span>Atomic SQLite persistence</span>
             </div>
